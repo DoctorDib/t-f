@@ -1,0 +1,72 @@
+try {
+  try {
+    var trueOrFalse = function(){
+        try{
+            try{
+                var True = true;
+            } catch(e){
+            }
+            
+            try {
+                var False = false;
+            } catch(e){
+            }
+
+            try{
+                if(True){
+                    True = true;
+                }
+            } catch(e){
+            }
+
+            try{
+                if(!False){
+                    False = false;
+                }
+            } catch(e){
+            }
+
+            try{
+                if(True && !False){
+                    True = true;
+                    False = false;
+                }
+            } catch(e){
+            }
+
+            try{
+                if(!True){
+                    True = false;
+                }
+            } catch(e){
+            }    
+
+            try {
+                if(False){
+                    False = true;
+                }
+            } catch(e) {
+            }
+
+            try {
+                if(!True && False){
+                    True = false;
+                    False = true;
+                }
+            } catch(e) {
+            }
+        } catch(e) {
+        }
+        
+        return True;
+    }
+  } catch(e) {
+  }
+
+  try {
+      trueOrFalse();
+  } catch(e) {
+  }
+  
+}catch(e){
+}
